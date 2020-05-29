@@ -143,12 +143,12 @@
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
       // Output the result in an element with id="demo"
-      document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s until Mayor Hal's term expires";
+      document.getElementById("countdown").innerHTML = days + " days " + hours + " hrs " + minutes + " mins and " + seconds + " secs until Mayor Hal's term expires";
 
       // If the count down is over, write some text
       if (distance < 0) {
         clearInterval(x);
-        document.getElementById("countdown").innerHTML = "EXPIRED";
+        document.getElementById("countdown").innerHTML = "...and he's outta here";
       }
     }, 1000);
     </script>
